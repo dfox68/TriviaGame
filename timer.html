@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>timer</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+  <p> Time remaining is <span id="countdowntimer">15 </span> seconds</p>
+<script type="text/javascript">
+var timeleft = 15;
+  var gameTimer = setInterval(function(){
+  timeleft--;
+  $("#countdowntimer").text(timeleft);
+  if(timeleft <= 0)
+      clearInterval(gameTimer);
+  },1000);
+</script>
+
+<div id="#countdowntimer>"
+</div>
+  </body>
+</html>
